@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="400" viewBox="0 0 600 400">
+  <defs>
+    <linearGradient id="y" x1="0" x2="1">
+      <stop offset="0%" stop-color="#fef08a"/>
+      <stop offset="100%" stop-color="#fde047"/>
+    </linearGradient>
+    <style>
+      .bg { fill: url(#y); }
+      .title { font-family: Inter, Arial, sans-serif; font-size: 44px; fill: #ffffff; font-weight: 800; }
+      .subtitle { font-family: Inter, Arial, sans-serif; font-size: 14px; fill: rgba(0,0,0,0.6); }
+      .logo { fill: #ef4444; }
+    </style>
+  </defs>
+
+  <rect width="100%" height="100%" rx="16" class="bg" />
+
+  <g transform="translate(28,28)">
+    <!-- small logo circle -->
+    <circle cx="44" cy="44" r="36" class="logo" />
+    <path d="M44 32c6 0 11 4 11 9s-5 9-11 9-11-4-11-9 5-9 11-9z" fill="#fff" opacity="0.95" />
+
+    <text x="120" y="58" class="title">Hola, soy Zuriel</text>
+    <text x="120" y="90" class="subtitle">Examen 1 — Proyecto web</text>
+  </g>
+</svg>

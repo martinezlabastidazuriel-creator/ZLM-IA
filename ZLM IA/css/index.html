@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Zuriel Labastida Martínez - Portafolio</title>
+    <meta name="description" content="Portafolio personal de Zuriel Labastida Martínez" />
+
+    <!-- Tailwind CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+      /* Small extras */
+      body { background: #0e1958ff; color: #191a1d; }
+      .card { transition: transform .18s ease, box-shadow .18s ease; }
+      .card:hover { transform: translateY(-6px); box-shadow: 0 10px 30px rgba(2,6,23,.12); }
+    </style>
+</head>agre
+<body class="antialiased">
+
+  <header class="bg-transparent shadow-sm">
+    <div class="max-w-5xl mx-auto px-6 py-4 flex items-center justify-between">
+      <a href="#" class="text-xl font-bold text-white">Zuriel Labastida</a>
+      <nav class="space-x-4 text-sm text-white hidden md:block">
+        <a href="#about" class="hover:underline">Acerca</a>
+        <a href="#projects" class="hover:underline">Ramas</a>
+        <a href="#gallery" class="hover:underline">Galería</a>
+        <a href="#contact" class="hover:underline">Contacto</a>
+      </nav>
+
+      <!-- mobile menu button -->
+      <button id="menuBtn" class="md:hidden px-2 py-1 rounded bg-transparent text-white border border-white/10">Menu</button>
+    </div>
+
+    <!-- mobile nav -->
+    <div id="mobileNav" class="px-6 pb-4 hidden">
+      <a href="#about" class="block py-2 text-white">Acerca</a>
+      <a href="#projects" class="block py-2 text-white">Ramas</a>
+      <a href="#gallery" class="block py-2 text-white">Galería</a>
+      <a href="#contact" class="block py-2 text-white">Contacto</a>
+    </div>
+  </header>
+
+  <main class="max-w-5xl mx-auto px-6 py-12">
+    <!-- Hero -->
+    <section class="grid gap-6 md:grid-cols-2 items-center">
+      <div>
+        <h1 class="text-4xl md:text-5xl font-extrabold mb-4 text-white">Hola, soy Zuriel</h1>
+        <p class="text-white mb-6">
+          Estudiante de Ingeniería en Sistemas Computacionales. Aquí puedes ver las ramas de mi carrera y mi galería de proyectos.
+        </p>
+        <a href="#projects" class="inline-block px-6 py-3 bg-blue-600 text-white rounded-lg">Ver ramas</a>
+      </div>
+      <div class="rounded-lg overflow-hidden bg-transparent p-4 card text-center">
+        <img id="profilePhoto" src="../img/profile.png" alt="Foto de perfil" class="mx-auto w-56 h-56 object-cover rounded-full mb-4">
+        <div>
+          <label class="inline-block px-4 py-2 bg-blue-600 text-white rounded-lg cursor-pointer">
+            Subir foto
+            <input id="profileUpload" type="file" accept="image/*" class="hidden">
+          </label>
+          <p class="text-xs text-slate-500 mt-2">Selecciona la imagen que adjuntaste para usarla como foto de perfil.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="mt-12 bg-transparent p-6 rounded-lg card">
+      <h2 class="text-2xl font-bold mb-3 text-white">Acerca de mí</h2>
+      <p class="text-white">Soy estudiante de Ingeniería en Sistemas Computacionales. Me gusta desarrollar soluciones tecnológicas y aprender nuevas herramientas de programación.</p>
+    </section>
+
+    <!-- Projects (Ramas de la carrera) -->
+    <section id="projects" class="mt-8">
+      <h2 class="text-2xl font-bold mb-6">Ramas de la Carrera</h2>
+      <div class="grid md:grid-cols-2 gap-6">
+        <article class="bg-transparent p-6 rounded-lg card">
+          <h3 class="font-bold text-lg mb-2 text-white">Desarrollo Web</h3>
+          <p class="text-white">Creación de aplicaciones web modernas con HTML, CSS, JavaScript, React y frameworks backend.</p>
+        </article>
+        <article class="bg-transparent p-6 rounded-lg card">
+          <h3 class="font-bold text-lg mb-2 text-white">Programación de Sistemas</h3>
+          <p class="text-white">Desarrollo en C, C++, Python y Java. Algoritmos, estructuras de datos y optimización.</p>
+        </article>
+        <article class="bg-transparent p-6 rounded-lg card">
+          <h3 class="font-bold text-lg mb-2 text-white">Bases de Datos</h3>
+          <p class="text-white">Diseño y gestión de bases de datos relacionales y no relacionales. SQL y NoSQL.</p>
+        </article>
+        <article class="bg-transparent p-6 rounded-lg card">
+          <h3 class="font-bold text-lg mb-2 text-white">Redes e Infraestructura</h3>
+          <p class="text-white">Administración de redes, servidores, seguridad informática y sistemas distribuidos.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Gallery -->
+    <section id="gallery" class="mt-10">
+      <h2 class="text-2xl font-bold mb-4">Galería de Proyectos</h2>
+
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+    
+        <!-- Proyecto: Juego Gemini 5.0 -->
+        <div class="bg-transparent p-4 rounded-lg card">
+          <a href="https://martinezlabastidazuriel-creator.github.io/juegogemini5.0/" target="_blank" class="block">
+            <img src="../img/juego_gemini.svg" alt="Juego Gemini 5.0" class="w-full h-40 object-cover rounded mb-3">
+            <h4 class="font-bold text-sm text-white">Juego Gemini 5.0</h4>
+            <p class="text-xs text-slate-200">Juego web publicado en GitHub Pages</p>
+          </a>
+        </div>
+
+        <!-- Proyecto: Mosqueteros -->
+        <div class="bg-transparent p-4 rounded-lg card">
+          <a href="https://martinezlabastidazuriel-creator.github.io/Mosqueteros/" target="_blank" class="block">
+            <img src="../img/mosqueteros.svg" alt="Mosqueteros" class="w-full h-40 object-cover rounded mb-3">
+            <h4 class="font-bold text-sm text-white">Mosqueteros</h4>
+            <p class="text-xs text-slate-200">Sitio web del proyecto (abre en nueva pestaña)</p>
+          </a>
+        </div>
+
+        <!-- Proyecto: Examen 1 -->
+        <div class="bg-transparent p-4 rounded-lg card">
+          <a href="https://martinezlabastidazuriel-creator.github.io/examen1/" target="_blank" class="block">
+            <img src="../img/examen1.svg" alt="Examen 1" class="w-full h-40 object-cover rounded mb-3">
+            <h4 class="font-bold text-sm text-white">Examen 1</h4>
+            <p class="text-xs text-slate-200">Proyecto del examen 1 (abre en nueva pestaña)</p>
+          </a>
+        </div>
+
+        <!-- Proyecto: Mosqueteros (Avila) -->
+        <div class="bg-transparent p-4 rounded-lg card">
+          <a href="https://avilamiguel1007.github.io/Mosqueteros/" target="_blank" class="block">
+            <img src="../img/mosqueteros_avila.svg" alt="Mosqueteros (Avila)" class="w-full h-40 object-cover rounded mb-3">
+            <h4 class="font-bold text-sm text-white">Mosqueteros (Avila)</h4>
+            <p class="text-xs text-slate-200">Versión en el repositorio de Avila (abre en nueva pestaña)</p>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="mt-10 bg-transparent p-6 rounded-lg card">
+      <h2 class="text-2xl font-bold mb-3 text-white">Contacto</h2>
+      <p class="text-white">📧 Correo: <a href="mailto:tu-email@ejemplo.com" class="text-blue-400 hover:underline">tu-email@ejemplo.com</a></p>
+      <p class="text-white">📱 Teléfono: <a href="tel:+5212345678901" class="text-blue-400 hover:underline">+52 234 567 8901</a></p>
+      <p class="text-white">💻 GitHub: <a href="https://github.com/tu-usuario" target="_blank" class="text-blue-400 hover:underline">github.com/tu-usuario</a></p>
+      <p class="text-white">📸 Instagram: <a href="https://instagram.com/tu-usuario" target="_blank" class="text-blue-400 hover:underline">@tu-usuario</a></p>
+    </section>
+  </main>
+
+  <footer class="mt-12 py-6 bg-transparent">
+    <div class="max-w-5xl mx-auto px-6 text-center text-sm text-slate-300">
+      © 2025 Zuriel Labastida Martínez
+    </div>
+  </footer>
+
+  <!-- Image preview modal -->
+  <div id="preview" class="fixed inset-0 bg-black/60 hidden items-center justify-center z-50">
+    <div class="bg-slate-900/90 rounded-lg overflow-hidden max-w-3xl w-full mx-4">
+      <div class="flex justify-end p-2">
+        <button onclick="closePreview()" class="px-3 py-1 bg-slate-700 text-white rounded">Cerrar</button>
+      </div>
+      <img id="previewImg" src="" alt="Preview" class="w-full h-auto object-contain">
+    </div>
+  </div>
+
+  <script>
+    // mobile menu
+    document.getElementById('menuBtn').addEventListener('click', () => {
+      const nav = document.getElementById('mobileNav');
+      nav.classList.toggle('hidden');
+    });
+
+    // preview functions
+    function openPreview(src) {
+      document.getElementById('previewImg').src = src;
+      document.getElementById('preview').classList.remove('hidden');
+      document.getElementById('preview').classList.add('flex');
+    }
+    function closePreview() {
+      document.getElementById('preview').classList.add('hidden');
+      document.getElementById('preview').classList.remove('flex');
+      document.getElementById('previewImg').src = '';
+    }
+
+    // Profile photo upload, preview and persistence
+    const profileUpload = document.getElementById('profileUpload');
+    const profilePhoto = document.getElementById('profilePhoto');
+
+    // Load saved profile photo from localStorage (if any)
+    if (localStorage.getItem('profilePhoto')) {
+      profilePhoto.src = localStorage.getItem('profilePhoto');
+    }
+
+    // handle upload and save as data URL
+    profileUpload.addEventListener('change', (e) => {
+      const file = e.target.files && e.target.files[0];
+      if (!file) return;
+      const reader = new FileReader();
+      reader.onload = function(ev) {
+        profilePhoto.src = ev.target.result;
+        localStorage.setItem('profilePhoto', ev.target.result);
+      };
+      reader.readAsDataURL(file);
+    });
+
+    // friendly: if profile image fails to load, hide it
+    profilePhoto.addEventListener('error', () => profilePhoto.style.display = 'none');
+  </script>
+</body>
+</html>
